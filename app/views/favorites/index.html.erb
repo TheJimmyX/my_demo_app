@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<h1>Favorites</h1>
+	</div>
+	<div class="row">			
+		<% @favorites.each do |fav|%>
+			<div class="col-lg-3">
+				<div class="card mb-4 shadow-sm" style="width: 18rem;">
+					<div class="card-body">						
+						<img src="<%= fav.photo_url_small %>" alt="" width="100%">
+						<div class="card-body">							
+						</div>
+					</div>
+				</div>
+			</div>
+		<% end %>			
+	</div>
+</div>
