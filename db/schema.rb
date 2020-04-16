@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 1) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "favorites", force: :cascade do |t|
     t.string "photo_id"
     t.string "photo_url_small"
